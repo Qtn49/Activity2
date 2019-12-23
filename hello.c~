@@ -2,8 +2,8 @@
 
 int main (void) 
 {
-	char nom[50];
+	char *nom;
 	printf("Comment tu t'appelles petit?");
-	scanf("%s", &nom);
+	scanf("%s", nom);
 	printf("Salut %s !\n", nom);
 }
