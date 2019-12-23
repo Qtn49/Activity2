@@ -1,9 +1,10 @@
 #include <stdio.h>
 
-int main (void) 
+int main (int argc, const char * argv[]) 
 {
-	char nom[50];
-	printf("Comment tu t'appelles petit?");
-	scanf("%s", &nom);
-	printf("Salut %s !\n", nom);
+	if (argc > 1) {
+		printf("Salut %s !\n", argv[1]);
+	}else {
+		printf("Il faut entrer un prénom en paramètre\n");
+	}
 }
